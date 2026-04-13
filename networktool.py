@@ -25,4 +25,5 @@ def validate_port(port):
     main()
 if choice == "1":
     ip = input("Ange en ip-adress: ")
-    validate_ip
+    validate_ip(ip)
+    print("Validerar IP-adress...")
