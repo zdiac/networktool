@@ -25,7 +25,13 @@ def main():
 
         elif choice == "2":
             port = input("Ange ett portnummer: ")
-            validate_port(port)     
+            validate_port(port)   
+
+        elif choice == "3":
+            printf("\n--- Logg ----")
+            for entry in logg:
+                printf(entry)    
+
         elif choice =="4":
             print("Avslutar programmet...")
             break
