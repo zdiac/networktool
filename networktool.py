@@ -17,4 +17,9 @@ def main():
             print("Funktionen är inte implementerad ännu.")
 
 if __name__ == "__main__":
+    def validate_ip(ip):
+        pass
+
+def validate_port(port):
+    pass
     main()
