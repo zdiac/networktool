@@ -1,5 +1,14 @@
 logg = []  # Lista som ska lagra loggmeddelanden
 
+
+def validate_ip(ip):
+    pass
+
+
+def validate_port(port):
+    pass
+
+
 def main():
     while True:
         print("\n--- NetworkTool ---")
@@ -16,14 +25,6 @@ def main():
         else:
             print("Funktionen är inte implementerad ännu.")
 
-if __name__ == "__main__":
-    def validate_ip(ip):
-        pass
 
-def validate_port(port):
-    pass
+if __name__ == "__main__":
     main()
-if choice == "1":
-    ip = input("Ange en ip-adress: ")
-    validate_ip(ip)
-    print("Validerar IP-adress...")
