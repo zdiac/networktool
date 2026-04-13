@@ -2,7 +2,7 @@ logg = []  # Lista som ska lagra loggmeddelanden
 
 
 def validate_ip(ip):
-    pass
+    print("Validerar IP-adress...")
 
 
 def validate_port(port):
@@ -21,9 +21,8 @@ def main():
 
         if choice == "1":
             ip = input("Ange en IP-adress: ")
-            def validate_ip(ip):
-                print("Validerar IP-adress...")
-
+            validate_ip(ip)
+                
         elif choice == "2":
             port = input("Ange ett portnummer: ")
             validate_port(port)   
