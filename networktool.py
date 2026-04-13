@@ -21,16 +21,17 @@ def main():
 
         if choice == "1":
             ip = input("Ange en IP-adress: ")
-            validate_ip(ip)
+            def validate_ip(ip):
+                print("Validerar IP-adress...")
 
         elif choice == "2":
             port = input("Ange ett portnummer: ")
             validate_port(port)   
 
         elif choice == "3":
-            printf("\n--- Logg ----")
+            print("\n--- Logg ----")
             for entry in logg:
-                printf(entry)    
+                print(entry)    
 
         elif choice =="4":
             print("Avslutar programmet...")
