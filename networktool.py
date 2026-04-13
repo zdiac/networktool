@@ -19,9 +19,13 @@ def main():
 
         choice = input("Välj ett alternativ: ")
 
-        if choice == "4":
+        if choice == "1":
+            ip = input("Ange en IP-adress: ")
+            validate_ip(ip)
+        elif choice =="4":
             print("Avslutar programmet...")
             break
+        
         else:
             print("Funktionen är inte implementerad ännu.")
 
