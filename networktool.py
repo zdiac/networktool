@@ -23,3 +23,6 @@ if __name__ == "__main__":
 def validate_port(port):
     pass
     main()
+if choice == "1":
+    ip = input("Ange en ip-adress: ")
+    validate_ip
