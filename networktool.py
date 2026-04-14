@@ -22,10 +22,12 @@ def main():
         if choice == "1":
             ip = input("Ange en IP-adress: ")
             validate_ip(ip)
+            logg.append(f"Validerade IP: {ip}")
                 
         elif choice == "2":
             port = input("Ange ett portnummer: ")
-            validate_port(port)   
+            validate_port(port)  
+            logg.append(f"Validerade port: {port}") 
 
         elif choice == "3":
             print("\n--- Logg ----")
