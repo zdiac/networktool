@@ -22,7 +22,18 @@ def validate_ip(ip):
 
 
 def validate_port(port):
-    print("Validerar portnummer...")
+    if not port.isdigit()
+        print("Ogiltigt portnummer: måste vara en siffra")
+        return
+    
+    nummer = int(port)
+
+    if nummer < 0 or nummer > 65535:
+        print("Ogiltigt portnummer: måste vara mellan 0 och 65535")
+        return
+    
+    print("Portnumret är giltigt!")
+    
 
 
 def main():
