@@ -1,7 +1,10 @@
+from datetime import datetime
 logg = []  # Lista som ska lagra loggmeddelanden
 
 
 def validate_ip(ip):
+    logg.append(f"[{datetime.now()}] Validerade IP: {ip}")
+
     delar = ip.split(".")
 
     if len(delar) != 4:
@@ -22,7 +25,8 @@ def validate_ip(ip):
 
 
 def validate_port(port):
-    logg.apend(f"Validerade port: {port}")
+
+    logg.apend(f"[{datetime.now()}] Validerade port: {port}")
 
     if not port.isdigit()
         print("Ogiltigt portnummer: måste vara en siffra")
