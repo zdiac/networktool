@@ -6,7 +6,7 @@ def validate_ip(ip):
 
 
 def validate_port(port):
-    pass
+    print("Validerar portnummer...")
 
 
 def main():
