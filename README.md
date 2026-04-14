@@ -2,6 +2,14 @@
 # networktool
 ELIAS KARLSTRÖM
 
+# Hur kör man programmen?
+Båda programmen går att köra i ubuntu när man hämtar mitt repo.
+python programmet körs med kommando "python3 networktool.py"
+c programmet körs med "./networktool"
+Man måste självklara vara i mappen networktool
+
+# Skillnader mellan python och C
+
 Python är enklare att koda i än C för att man slipper tänka på:
 1: Minne, exempelvis i C så gjorde jag char ip[50];
 Jag behövde aldrig tänka på minne i python.
