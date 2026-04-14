@@ -2,7 +2,23 @@ logg = []  # Lista som ska lagra loggmeddelanden
 
 
 def validate_ip(ip):
-    print("Validerar IP-adress...")
+    delar = ip.split(".")
+
+    if len(delar) != 4:
+        print("Ogiltig IP-adress: fel antal delar.")
+        return
+    
+    for del_ in delar:
+        if not del_.isdigit():
+            print("Ogiltig IP-adress: alla delar måste vara siffror.")
+            return
+        
+        nummer = int(del_)
+        if nummer < 0 or  nummer > 255:
+            print("Ogiltig IP-adress: varje del måste vara 0-255.")
+            return
+        
+    print("IP-adressen är giltig!")
 
 
 def validate_port(port):
