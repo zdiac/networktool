@@ -1,6 +1,5 @@
-<<<<<<< HEAD
+
 # networktool
-=======
 ELIAS KARLSTRÖM
 
 Python är enklare att koda i än C för att man slipper tänka på:
