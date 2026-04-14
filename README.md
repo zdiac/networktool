@@ -25,4 +25,3 @@ I C så var jag tvungen att välja ett max antal loggar, bestämma längd per lo
 PS.
 Jag gjorde mina program med hjälp utav AI, för annars hade det varit för svårt för den kunskapen jag besitter just nu, men jag gjorde i princip en rad
 i taget och bad AI att förklara varje rad jag gjorde, sedan comittade jag och fortsatte så.
->>>>>>> master
