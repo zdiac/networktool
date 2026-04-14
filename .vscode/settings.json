@@ -1,0 +1,5 @@
+{
+    "chat.implicitContext.suggestedContext": false,
+    "chat.contextUsage.enabled": false,
+    "chat.extensionUnification.enabled": false
+}
