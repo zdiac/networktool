@@ -22,6 +22,8 @@ def validate_ip(ip):
 
 
 def validate_port(port):
+    logg.apend(f"Validerade port: {port}")
+
     if not port.isdigit()
         print("Ogiltigt portnummer: måste vara en siffra")
         return
@@ -33,7 +35,7 @@ def validate_port(port):
         return
     
     print("Portnumret är giltigt!")
-    
+
 
 
 def main():
