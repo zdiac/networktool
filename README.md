@@ -5,21 +5,22 @@ ELIAS KARLSTRÖM
 # Hur kör man programmen?
 Båda programmen går att köra i ubuntu när man hämtar mitt repo.
 python programmet körs med kommando "python3 networktool.py"
-c programmet körs med "./networktool"
+c programmet körs med "./networktool", programmet är redan kompilerat men finns också som networktool.c där man kan se koden med vim networktool.c
 Man måste självklara vara i mappen networktool
 
 # Skillnader mellan python och C
 
 Python är enklare att koda i än C för att man slipper tänka på:
-1: Minne, exempelvis i C så gjorde jag char ip[50];
+
+1: Minne, exempelvis i C så gjorde jag char "ip[50];" för att tilldela minne för ip adresserna.
 Jag behövde aldrig tänka på minne i python.
 
-2. Stränghantering. I python räckte det med att skriva delar = ip.split(".")
+2. Stränghantering. I python räckte det med att skriva "delar = ip.split(".")"
    i C så var jag tvungen att dela upp alla delar av ip adressen själv
-   for (int i = 0; ip[i] != '\0'; i++) {
+   "for (int i = 0; ip[i] != '\0'; i++) {
     if (isdigit(ip[i])) { ... }
     else if (ip[i] == '.') { ... }
-}
+}"
 
 3. Loggning. I python kunde jag göra logg.append(f"[{datetime.now()}] Validerade IP: {ip}")
 I C så var jag tvungen att välja ett max antal loggar, bestämma längd per loggrad och hålla koll på index.
@@ -29,6 +30,8 @@ I C så var jag tvungen att välja ett max antal loggar, bestämma längd per lo
 5. Om jag exempelvis skrev ett "(" så fyllde den automatiskt in ")" samma sak med citattecken. Det var enklare att se vart man eventuellt gjort fel.
 
 6. Det var otroligt enkelt att lägga till saker i git med VScode. Jag behövde aldrig skriva något förutom mina commit-meddelanden.
+
+7. Med python så är indentering extra viktigt, med C så måste man istället hålla stor koll på "{" tecknen 
 
 PS.
 Jag gjorde mina program med hjälp utav AI, för annars hade det varit för svårt för den kunskapen jag besitter just nu, men jag gjorde i princip en rad
